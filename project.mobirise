@@ -1,0 +1,212 @@
+{
+  "settings": {
+    "name": "레아비전",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": true,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": true
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.17",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "imageResize": true,
+    "chatbutton": {},
+    "usedWebp": true,
+    "cssOptimize": true,
+    "lazyLoad": true,
+    "robotsSwitcher": false,
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "PWA": {
+      "enabled": false
+    },
+    "favicon": false,
+    "mbrsiteDomain": "rheavision",
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "witsec-mailform": false,
+    "witsec-jquery": false,
+    "pwa-switcher": false,
+    "uniqCompNum": 1,
+    "versionPublish": "5.9.19",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "레아비전",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "padding": "0 30px",
+                "@media (max-width: 768px)": {
+                  "padding": "0 20px"
+                }
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".container": {
+              "@media (max-width: 992px)": {
+                "padding": "0 20px"
+              }
+            },
+            ".content-wrapper": {
+              "padding": "60px 0",
+              "@media (max-width: 992px)": {
+                "padding": "46px 0"
+              }
+            },
+            ".dragArea.row": {
+              "position": "relative",
+              "z-index": "1",
+              ".mbr-section-title": {
+                "margin-bottom": "32px !important"
+              },
+              ".mbr-text": {
+                "margin-bottom": "60px !important",
+                "@media (max-width: 992px)": {
+                  "margin-bottom": "46px !important"
+                }
+              },
+              ".form-group": {
+                "margin-bottom": "46px !important",
+                ".form-control-label": {
+                  "width": "100%",
+                  "margin-bottom": "16px"
+                },
+                ".form-control": {
+                  "padding": "0 0 8px 0",
+                  "border": "none !important",
+                  "border-bottom": "1px solid @border !important",
+                  "box-shadow": "none",
+                  "border-radius": "0 !important",
+                  "background-color": "transparent",
+                  "&:hover, &:focus": {
+                    "border": "none !important",
+                    "border-bottom": "1px solid @active !important"
+                  },
+                  "&::placeholder": {
+                    "color": "@border"
+                  }
+                },
+                "textarea": {
+                  "min-height": "150px"
+                },
+                ".form-check": {
+                  "padding-left": "1.9em",
+                  "margin-bottom": "16px",
+                  ".form-check-input": {
+                    "background-color": "@active",
+                    "border-color": "@active",
+                    "border-radius": "0"
+                  }
+                }
+              },
+              ".mbr-section-btn": {
+                "width": "100%"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            ".mbr-text, .text-wrapper": {
+              "color": "#000000",
+              "text-align": "center"
+            },
+            "label": {
+              "color": "#000000"
+            },
+            ".mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "form01",
+          "_sourceTheme": "immersem5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"form01 immersem5\" group=\"Form\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\" plugins=\"formstyler, datepicker\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <header>Form</header>\n        <input type=\"color\" title=\"Border Color\" value=\"#dcdde0\" name=\"border\" selected>\n        <input type=\"color\" title=\"Active Border Color\" value=\"#000000\" name=\"active\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/immersem5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/immersem5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"hidden\" name=\"usedRecaptcha\" value=\"false\"></mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-6\">\n                <div class=\"content-wrapper\">\n                    <div mbr-form class=\"mbr-form\">\n<!--Formbuilder Form-->\n<form action=\"payon5988@gmail.com\" name=\"신청서\" method=\"POST\" class=\"mbr-form form-with-styler\" data-verified=\"payon5988@gmail.com\">\n<div class=\"row\">\n<div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">신청이 접수되었습니다!(1644-4907 문의)</div>\n<div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\"> Oops...! some problem! </div>\n</div>\n<div class=\"dragArea row\">\n<div class=\"col-lg-12 col-md-12 col-sm-12\">\n<h2 mbr-theme-style=\"display-2\" class=\" mbr-section-title mbr-fonts-style\">레아비전 교육용 키오스크키오에듀 파트너 신청</h2>\n</div>\n<div class=\"col-lg-12 col-md-12 col-sm-12\">\n<p mbr-theme-style=\"display-4\" class=\"mbr-text mbr-fonts-style\">주식회사 레아비전&nbsp;</p>\n</div>\n<div data-for=\"name\" class=\"col-lg-12 col-md-12 col-sm-12 form-group mb-3 mb-3\">\n<label mbr-text mbr-theme-style=\"display-4\" for=\"name\" class=\"form-control-label mbr-fonts-style\">성명</label>\n<input type=\"text\" name=\"name\" placeholder=\"성명\" data-form-field=\"name\" mbr-theme-style=\"display-4\" class=\"form-control\" required=\"required\" value>\n</div>\n<div data-for=\"전화번호\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"전화번호\" class=\"form-control-label mbr-fonts-style\">전화번호</label>\n<input type=\"tel\" name=\"전화번호\" placeholder=\"0102345678\" data-form-field=\"전화번호\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\" value>\n</div>\n<div data-for=\"email\" class=\"col-lg-12 col-md-12 col-sm-12 form-group mb-3\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"email\" class=\"form-control-label mbr-fonts-style\">Email</label>\n<input type=\"email\" name=\"email\" placeholder=\"master@hbnetwork.co.kr\" data-form-field=\"email\" mbr-theme-style=\"display-7\" class=\"form-control\" required=\"required\" value>\n</div>\n<div data-for=\"text\" class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"text\" class=\"form-control-label mbr-fonts-style\">업체명</label>\n<input type=\"text\" name=\"text\" placeholder=\"(주)레아비전\" data-form-field=\"text\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\" value>\n</div>\n<div class=\"col-lg-12 col-md-12 col-sm-12 form-group\" data-for=\"text1\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"text1\" class=\"form-control-label mbr-fonts-style\">사업자번호</label>\n<input type=\"text\" name=\"text1\" placeholder=\"106000000\" data-form-field=\"text1\" mbr-theme-style=\"display-7\" required=\"required\" class=\"form-control\" value>\n</div>\n<div class=\"col-lg-12 col-md-12 col-sm-12 form-group\">\n<div class=\"form-control-label\">\n<label mbr-text mbr-theme-style=\"display-7\" for=\"안면인식출결기(RH2000)\" class=\"mbr-fonts-style\" hidden=\"hidden\">선택(복수 가능)</label>\n</div>\n<div data-for=\"키오스크\" class=\"form-check ms-2\" hidden=\"hidden\">\n<input type=\"checkbox\" value=\"Yes\" name=\"키오스크\" data-form-field=\"키오스크\" mbr-theme-style=\"display-7\" class=\"form-check-input\" hidden=\"hidden\">\n<label mbr-text for=\"키오스크\" mbr-theme-style=\"display-7\" class=\"form-check-label\" hidden=\"hidden\">키오스크</label>\n</div>\n<div data-for=\"테이블오더(테이블톡)\" class=\"form-check ms-2\" hidden=\"hidden\">\n<input type=\"checkbox\" value=\"Yes\" name=\"테이블오더(테이블톡)\" data-form-field=\"테이블오더(테이블톡)\" mbr-theme-style=\"display-7\" class=\"form-check-input\" hidden=\"hidden\">\n<label mbr-text for=\"테이블오더(테이블톡)\" mbr-theme-style=\"display-7\" class=\"form-check-label\" hidden=\"hidden\">테이블오더(테이블톡)</label>\n</div>\n<div data-for=\"안면인식출결기(RH2000)\" class=\"form-check ms-2\" hidden=\"hidden\">\n<input type=\"checkbox\" value=\"Yes\" name=\"안면인식출결기(RH2000)\" data-form-field=\"안면인식출결기(RH2000)\" mbr-theme-style=\"display-7\" class=\"form-check-input\" hidden=\"hidden\">\n<label mbr-text for=\"안면인식출결기(RH2000)\" mbr-theme-style=\"display-7\" class=\"form-check-label\" hidden=\"hidden\">안면인식출결기(RH2000)</label>\n</div>\n</div>\n<div mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" class=\"col mbr-section-btn\"><a type=\"submit\" class=\"w-100 w-100 w-100 w-100 w-100 btn btn-primary\" data-app-placeholder=\"Type Text\"> 보내기</a></div>\n</div>\n</form><!--Formbuilder Form-->\n</div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "u9IJQQFsw4",
+          "_anchor": "form01-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
